@@ -5,24 +5,24 @@ using System.Text;
 class MainClass{
 static void Main(string[] args)
 {
-  Keuze keuze1 = new Keuze("You wonder into a cave.");
-  Keuze keuze2 = new Keuze("You go further in.");
-  Keuze keuze3 = new Keuze("You exit the cave and walk away.");
+  Keuze keuze1 = new Keuze("Je loopt een bos in.");
+  Keuze keuze2 = new Keuze("Je volgt het pad dieper het bos in.");
+  Keuze keuze3 = new Keuze("Je keert terug naar het begin van het pad.");
 
-  Connect(keuze1, keuze2, "Explore.");
-  Connect(keuze1, keuze3, "Leave.");
+  Connect(keuze1, keuze2, "Verken.");
+  Connect(keuze1, keuze3, "Keer terug.");
 
-  Keuze keuze4 = new Keuze("There is ancient text written on the wall!");
-  Keuze keuze5 = new Keuze("The ground is full of bugs!");
-  Keuze keuze6 = new Keuze("The spider scares you!");
+  Keuze keuze4 = new Keuze("Je vindt een oude schatkaart!");
+  Keuze keuze5 = new Keuze("Je ziet een groep wilde dieren!");
+  Keuze keuze6 = new Keuze("Je hoort mysterieuze geluiden!");
 
-  Connect(keuze2, keuze4, "You take out your flashlight.");
-  Connect(keuze2, keuze5, "You look at the ground.");
-  Connect(keuze2, keuze6, "You notice the spider.");
+  Connect(keuze2, keuze4, "Je pakt de kaart op.");
+  Connect(keuze2, keuze5, "Je verstopt je achter een boom.");
+  Connect(keuze2, keuze6, "Je volgt de geluiden.");
 
-  Connect(keuze4, keuze3, "You will find the enterence with your flashlight.");
-  Connect(keuze5, keuze3, "You will run back to the enterence.");
-  Connect(keuze6, keuze3, "You will stumble across the enterence.");
+  Connect(keuze4, keuze3, "Je besluit terug te keren met de kaart.");
+  Connect(keuze5, keuze3, "Je rent terug naar het begin van het pad.");
+  Connect(keuze6, keuze3, "Je raakt verdwaald en keert terug.");
 
     Keuze head = keuze1;
 
